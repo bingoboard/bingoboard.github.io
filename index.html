@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/addons/p5.sound.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="main-container">
+        <div class="header-container">
+          <header>
+            <p>BINGO</p>
+          </header>
+        </div>
+        <div class="board-container">
+          <div id="board">
+            <div class="cell num"></div>
+            <div class="cell num"></div>
+            <div class="cell num"></div>
+            <div class="cell num"></div>
+            <div class="cell num"></div>
+            <div class="cell num"></div>
+            <div class="cell num"></div>
+            <div class="cell num"></div>
+            <div class="cell num"></div>
+            <div class="cell num"></div>
+            <div class="cell num"></div>
+            <div class="cell num"></div>
+            <div class="cell">Free Space</div>
+            <div class="cell num"></div>
+            <div class="cell num"></div>
+            <div class="cell num"></div>
+            <div class="cell num"></div>
+            <div class="cell num"></div>
+            <div class="cell num"></div>
+            <div class="cell num"></div>
+            <div class="cell num"></div>
+            <div class="cell num"></div>
+            <div class="cell num"></div>
+            <div class="cell num"></div>
+            <div class="cell num"></div>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button class="btn btn-primary m-1" id="generate-board">
+            Generate Board
+          </button>
+
+          <button class="btn btn-danger m-1" id="clear-board">
+            Clear Board
+          </button>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

@@ -19,6 +19,8 @@ function generateBoard() {
     divs[i].innerHTML = arr[counter];
     counter += 1;
   }
+
+  $(".cell").removeClass("highlight-cell");
 }
 
 document.getElementById("clear-board").onclick = function () {
@@ -30,4 +32,12 @@ function clearBoard() {
   for (var i = 0; i < divs.length; i++) {
     divs[i].innerHTML = "";
   }
+
+  $(".cell").removeClass("highlight-cell");
 }
+
+$(document).ready(function () {
+  $(".cell").on("click", function () {
+    $(this).toggleClass("highlight-cell");
+  });
+});

@@ -62,3 +62,8 @@ header {
 .buttons {
   margin-top: 1rem;
 }
+
+.highlight-cell {
+  background-color: rgb(255, 243, 77);
+  opacity: 0.5;
+}
